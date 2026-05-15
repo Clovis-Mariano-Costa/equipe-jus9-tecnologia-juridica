@@ -1,0 +1,1 @@
+Instruções para outro chat: usar modelo de assinatura, página Equipe, currículo de Natã com avatar, perfis de Clovis, Charlie e Vitor; revisar autorização, privacidade e classificação antes de publicação.
