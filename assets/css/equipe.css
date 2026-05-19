@@ -5,3 +5,14 @@
 .badge{display:inline-flex;border-radius:999px;padding:6px 12px;background:rgba(122,77,216,.10);color:#3b2aa3;font-weight:850;font-size:12px;text-transform:uppercase;letter-spacing:.04em}.team-grid{margin-top:26px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}.member-card{background:rgba(255,255,255,.92);border:1px solid var(--border);border-radius:24px;box-shadow:var(--shadow);overflow:hidden}.member-card img{width:100%;aspect-ratio:1/1;object-fit:cover;background:#e9ecf5}.member-card .content{padding:22px}.member-card h2,.profile h1{margin:14px 0 6px;line-height:1.1}.member-card p{color:var(--muted)}
 .profile{display:grid;grid-template-columns:minmax(240px,360px) 1fr;gap:26px;align-items:start}.profile-photo-card,.profile-main{background:#fff;border:1px solid var(--border);border-radius:30px;box-shadow:var(--shadow)}.profile-photo-card{padding:18px}.profile-photo-card img{width:100%;border-radius:22px;display:block}.profile-main{padding:32px}.profile-main h1{font-size:clamp(32px,4vw,52px)}.kicker{color:var(--gold);font-weight:900;text-transform:uppercase;letter-spacing:.08em}.section{margin-top:24px;padding-top:20px;border-top:1px solid var(--border)}.pill-list{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:12px 0 0;list-style:none}.pill-list li{border:1px solid rgba(35,213,232,.35);background:rgba(35,213,232,.08);border-radius:999px;padding:8px 12px;font-weight:700}.notice{margin-top:22px;padding:18px;border-radius:18px;background:linear-gradient(135deg,rgba(215,168,79,.14),rgba(122,77,216,.08));border:1px solid rgba(215,168,79,.28)}
 .footer{max-width:1160px;margin:0 auto;padding:24px 20px 44px;color:var(--muted);font-size:14px}@media(max-width:780px){.site-header{align-items:flex-start;flex-direction:column}.profile{grid-template-columns:1fr}.hero,.profile-main{padding:24px}}
+
+/* Pacote mobile Samsung - responsividade Jus 9 */
+html,body{max-width:100%;overflow-x:hidden}
+img,video,canvas,svg{max-width:100%;height:auto}
+button,input,select,textarea{max-width:100%}
+@media(max-width:760px){
+  .container,.wrap,.page,main{max-width:100%;}
+  nav,.nav,.menu,.links,.nav-links,.actions,.link-actions,.social-links,.origin-links{flex-wrap:wrap;}
+  .grid,.grid2,.grid-2,.grid-3,.grid-4,.cards3,.profile-grid,.demo-grid,.demo-grid-2,.workbench,.timeline,.footer-grid{grid-template-columns:1fr!important;}
+  table{display:block;width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+}
