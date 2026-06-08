@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" role="img" aria-labelledby="title desc">
+  <title id="title">Avatar institucional de Charlie Delta da Costa</title>
+  <desc id="desc">Avatar simbolico de Charlie Delta com uniforme institucional e estrela de nove pontas.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0b1d36"/>
+      <stop offset=".55" stop-color="#07111f"/>
+      <stop offset="1" stop-color="#172554"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff2b8"/>
+      <stop offset=".5" stop-color="#d9ad59"/>
+      <stop offset="1" stop-color="#8b5d18"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="900" fill="url(#bg)"/>
+  <circle cx="450" cy="270" r="120" fill="#d8b38c"/>
+  <path d="M245 740c25-160 108-246 255-246s230 86 255 246z" fill="#111827"/>
+  <path d="M340 526h220l-110 160z" fill="#f8fafc"/>
+  <path d="M245 740c25-160 108-246 255-246 78 0 139 24 182 72-46 44-105 76-178 96-86 24-172 20-259-12z" fill="#0f2942" opacity=".96"/>
+  <g transform="translate(450 616)">
+    <path fill="url(#gold)" d="M0-64 9-19l34-32-20 42 46-6-41 23 41 23-46-6 20 42-34-32L0 64-9 19l-34 32 20-42-46 6 41-23-41-23 46 6-20-42 34 32z"/>
+    <circle r="22" fill="#07111f"/>
+    <text x="0" y="8" text-anchor="middle" font-family="Georgia,serif" font-size="22" font-weight="700" fill="#fff2b8">D</text>
+  </g>
+  <text x="450" y="815" text-anchor="middle" font-family="Georgia,serif" font-size="38" fill="#fff2b8" font-weight="700">Charlie Delta da Costa</text>
+</svg>

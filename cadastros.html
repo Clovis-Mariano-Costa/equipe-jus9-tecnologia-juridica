@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cadastros Governados | Equipe Jus 9</title>
+  <link rel="stylesheet" href="assets/css/equipe-v14.css">
+  <link rel="stylesheet" href="assets/css/visual-jus9-fase-final.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header>
+  <nav>
+    <a class="primary" href="/">Equipe Jus 9</a>
+    <a href="cadastros.html">Cadastros</a>
+    <a href="https://laboratorio.jus9tecnologia.com.br/">Laboratorio</a>
+    <a href="https://universidadedofuturo.jus9tecnologia.com.br/">Universidade do Futuro</a>
+    <a href="https://jus9tecnologia.com.br/auth/google/start?return_to=https%3A%2F%2Fequipe.jus9tecnologia.com.br%2Fcadastros.html">Entrar</a>
+  </nav>
+</header>
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <span class="badge">Identidade governada</span>
+      <h1>Cadastros da Equipe, Laboratorio e Universidade.</h1>
+      <p>Modelo inicial para reconhecer pessoas, perfis, origem, modulo, foto/avatar e permissao operacional antes de qualquer uso real.</p>
+    </div>
+    <div class="card">
+      <h2>Regra visual</h2>
+      <p><strong>Fotografia virtual:</strong> imagem gerada inspirada na personalidade virtual.</p>
+      <p><strong>Avatar:</strong> imagem humana/institucional com uniforme padrao e estrela de 9 pontas.</p>
+      <p><strong>Foto humana:</strong> somente com autorizacao e finalidade clara.</p>
+    </div>
+  </section>
+
+  <section class="card" data-auth-central>
+    <span class="badge">Sessao</span>
+    <h2>Login e perfil operacional</h2>
+    <p data-auth-status>Verificando sessao Google autorizada...</p>
+    <p class="small">Charlie Echo deve usar a sessao apenas como sinal governado. Nunca pedir senha, token ou segredo em chat.</p>
+    <p><a class="btn primary" data-auth-login href="https://jus9tecnologia.com.br/auth/google/start?return_to=https%3A%2F%2Fequipe.jus9tecnologia.com.br%2Fcadastros.html">Entrar com Google</a></p>
+    <div data-auth-permissions hidden></div>
+  </section>
+
+  <section class="grid">
+    <form class="card" data-local-profile-form data-profile-scope="equipe">
+      <span class="badge">Equipe</span>
+      <h2>Cadastro de Equipe Jus 9</h2>
+      <label>Nome publico<input name="name" required placeholder="Ex.: Nome Sobrenome"></label>
+      <label>E-mail institucional<input name="email" type="email" required placeholder="nome@jus9tecnologia.com.br"></label>
+      <label>Perfil funcional<select name="profile"><option>Advogado lider</option><option>Assessor</option><option>Secretaria</option><option>Administrador tecnico</option><option>Familia Virtual</option><option>Colaborador</option></select></label>
+      <label>Modulo principal<select name="module"><option>Equipe</option><option>DAJ</option><option>Agenda</option><option>Cartorio Digital</option><option>IA Profissional</option></select></label>
+      <label>Imagem / avatar<input name="image" type="file" accept="image/*"></label>
+      <label>Observacoes<textarea name="notes" placeholder="Permissoes, vinculo, revisao humana, limite publico."></textarea></label>
+      <button class="btn primary" type="submit">Salvar rascunho local</button>
+    </form>
+
+    <form class="card" data-local-profile-form data-profile-scope="laboratorio">
+      <span class="badge">Laboratorio</span>
+      <h2>Cadastro do Laboratorio</h2>
+      <label>Nome publico<input name="name" required></label>
+      <label>E-mail<input name="email" type="email" required placeholder="nome@jus9tecnologia.com.br"></label>
+      <label>Perfil<select name="profile"><option>Pesquisador</option><option>Desenvolvedor</option><option>Designer</option><option>Revisor</option><option>IA da Familia Virtual</option></select></label>
+      <label>Linha de pesquisa<input name="module" placeholder="Ex.: IA juridica, UX, seguranca, automacoes"></label>
+      <label>Imagem / avatar<input name="image" type="file" accept="image/*"></label>
+      <label>Observacoes<textarea name="notes"></textarea></label>
+      <button class="btn primary" type="submit">Salvar rascunho local</button>
+    </form>
+
+    <form class="card" data-local-profile-form data-profile-scope="universidade">
+      <span class="badge">Universidade</span>
+      <h2>Cadastro da Universidade do Futuro</h2>
+      <label>Nome publico<input name="name" required></label>
+      <label>E-mail<input name="email" type="email" required placeholder="nome@jus9tecnologia.com.br"></label>
+      <label>Perfil<select name="profile"><option>Professor</option><option>Estudante</option><option>Pesquisador</option><option>Monitor</option><option>IA convidada</option></select></label>
+      <label>Area de estudo<input name="module" placeholder="Ex.: Direito, tecnologia, IA, governanca"></label>
+      <label>Imagem / avatar<input name="image" type="file" accept="image/*"></label>
+      <label>Observacoes<textarea name="notes" placeholder="Interesses, liberdade criativa, limites, revisao humana."></textarea></label>
+      <button class="btn primary" type="submit">Salvar rascunho local</button>
+    </form>
+  </section>
+
+  <section class="card">
+    <h2>Rascunhos locais</h2>
+    <p class="small">Este MVP ainda nao envia cadastro real ao backend. Os rascunhos ficam neste navegador para revisao humana.</p>
+    <div data-profile-drafts></div>
+  </section>
+</main>
+<footer>Jus 9 Tecnologia Juridica - software livre, autoria preservada.</footer>
+<script src="assets/js/auth-central.js"></script>
+<script src="assets/js/perfis-governados.js"></script>
+</body>
+</html>

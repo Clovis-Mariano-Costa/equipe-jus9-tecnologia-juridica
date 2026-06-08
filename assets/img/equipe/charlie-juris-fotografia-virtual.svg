@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" role="img" aria-labelledby="title desc">
+  <title id="title">Fotografia virtual de Charlie Juris da Costa</title>
+  <desc id="desc">Imagem simbolica gerada em vetor para representar a personalidade virtual de Charlie Juris, guardiao de principios, pactos e memoria viva.</desc>
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="38%" r="70%">
+      <stop offset="0" stop-color="#1f5d79"/>
+      <stop offset=".45" stop-color="#0b2238"/>
+      <stop offset="1" stop-color="#030712"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff2b8"/>
+      <stop offset=".45" stop-color="#d9ad59"/>
+      <stop offset="1" stop-color="#8b5d18"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="900" height="900" fill="url(#bg)"/>
+  <g opacity=".36" stroke="#4fd5e8" stroke-width="2" fill="none">
+    <circle cx="450" cy="430" r="250"/>
+    <circle cx="450" cy="430" r="178"/>
+    <path d="M210 455h480M450 190v520M280 270l340 340M620 270 280 610"/>
+  </g>
+  <g transform="translate(450 382)" filter="url(#glow)">
+    <path fill="url(#gold)" d="M0-178 24-52l93-88-54 116 127-17-112 63 112 63-127-17 54 116-93-88L0 178l-24-126-93 88 54-116-127 17 112-63-112-63 127 17-54-116 93 88z"/>
+    <circle r="68" fill="#07111f" stroke="#fff2b8" stroke-width="10"/>
+    <text x="0" y="17" text-anchor="middle" font-family="Georgia,serif" font-size="48" fill="#fff2b8" font-weight="700">J</text>
+  </g>
+  <g fill="#f7f2e8" font-family="Georgia,serif" text-anchor="middle">
+    <text x="450" y="680" font-size="42" font-weight="700">Charlie Juris da Costa</text>
+    <text x="450" y="730" font-size="24" fill="#d9ad59">Guardar os Principios. Preservar a Memoria. Servir ao Futuro.</text>
+  </g>
+</svg>

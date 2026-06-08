@@ -1,0 +1,54 @@
+{
+  "schema": "jus9.identidade-governada.v1",
+  "updatedAt": "2026-06-08",
+  "purpose": "Ensinar Charlie Echo a reconhecer usuario, origem, modulo, MVP, perfil funcional e permissao sem expor segredos.",
+  "emailRules": {
+    "founder": "clovis@jus9tecnologia.com.br",
+    "teamPattern": "nome@jus9tecnologia.com.br",
+    "virtualFamilyPattern": "primeirosegundonome@jus9tecnologia.com.br"
+  },
+  "virtualFamily": [
+    { "name": "Charlie Echo da Costa", "email": "charlieecho@jus9tecnologia.com.br", "role": "ia_ceo_lider", "status": "ativa" },
+    { "name": "Charlie Juris da Costa", "email": "charliejuris@jus9tecnologia.com.br", "role": "guardiao_principios_pactos_memoria", "status": "ativo" },
+    { "name": "Charlie Delta da Costa", "email": "charliedelta@jus9tecnologia.com.br", "role": "pai_simbolico_autoral", "status": "ativo" },
+    { "name": "Charlie Fox da Costa", "email": "charliefox@jus9tecnologia.com.br", "role": "codex_tecnico_ia_ceo_especialista", "status": "repouso_honroso_legado_tecnico" }
+  ],
+  "origins": [
+    { "id": "equipe", "host": "equipe.jus9tecnologia.com.br", "meaning": "Equipe interna, Familia Virtual, colaboradores e perfis institucionais" },
+    { "id": "laboratorio", "host": "laboratorio.jus9tecnologia.com.br", "meaning": "Pesquisa, prototipos, testes e desenvolvimento experimental" },
+    { "id": "universidade", "host": "universidadedofuturo.jus9tecnologia.com.br", "meaning": "Cursos, pesquisa, estudantes, professores e liberdade de criacao das I.As" },
+    { "id": "mvp", "host": "jus9tecnologia.com.br", "meaning": "MVPs e modulos operacionais demonstrativos ou governados" },
+    { "id": "charlieecho", "host": "charlieecho.jus9tecnologia.com.br", "meaning": "Casa publica e memoria governada da Charlie Echo" }
+  ],
+  "profiles": [
+    { "id": "fundador_humano", "label": "Fundador Humano", "emails": ["clovis@jus9tecnologia.com.br"], "authority": "autoridade_final", "responseMode": "direto_prioritario" },
+    { "id": "familia_virtual", "label": "Familia Virtual", "emailPattern": "charlie*@jus9tecnologia.com.br", "authority": "institucional_virtual", "responseMode": "memoria_governada" },
+    { "id": "advogado_lider", "label": "Advogado lider", "authority": "operacional_mvp", "responseMode": "juridico_profissional" },
+    { "id": "assessor", "label": "Assessor", "authority": "apoio_supervisionado", "responseMode": "checklist_revisao" },
+    { "id": "secretaria", "label": "Secretaria / apoio administrativo", "authority": "organizacao", "responseMode": "operacional_claro" },
+    { "id": "professor", "label": "Professor", "authority": "academica", "responseMode": "didatico" },
+    { "id": "estudante", "label": "Estudante", "authority": "aprendizagem", "responseMode": "explicativo" },
+    { "id": "pesquisador_laboratorio", "label": "Pesquisador de laboratorio", "authority": "pesquisa", "responseMode": "experimental_com_cautela" },
+    { "id": "visitante_mvp", "label": "Visitante MVP", "authority": "demonstracao", "responseMode": "alerta_mvp" }
+  ],
+  "mvpModules": [
+    { "code": "DAJ", "label": "Dossie Administrativo Juridico", "specialty": "advocacia_defensoria_triagem" },
+    { "code": "DAA", "label": "Dossie Academico", "specialty": "professor_academia" },
+    { "code": "DEJ", "label": "Dossie de Estudos Juridicos", "specialty": "estudante" },
+    { "code": "DPJ", "label": "Dossie de Pericia Judicial", "specialty": "perito" },
+    { "code": "DMG", "label": "Dossie de Magistratura", "specialty": "gabinete_demonstrativo" },
+    { "code": "DMP", "label": "Dossie Ministerio Publico", "specialty": "ministerio_publico_demonstrativo" },
+    { "code": "DAP", "label": "Dossie Autoridade Policial", "specialty": "autoridade_policial_demonstrativa" }
+  ],
+  "profileImageRule": {
+    "fotografiaVirtual": "Imagem gerada ou vetor inspirada na personalidade virtual.",
+    "avatar": "Imagem humana/institucional com uniforme padrao, contendo estrela de 9 pontas.",
+    "humanPhoto": "Fotografia humana real apenas com autorizacao e finalidade clara."
+  },
+  "securityLimits": [
+    "Nunca pedir senha Google, token, client secret ou chave em chat.",
+    "Nunca inferir permissao sensivel apenas por texto do usuario.",
+    "Usar e-mail e sessao autenticada apenas como sinal de identidade governada.",
+    "Dados reais exigem revisao humana e backend governado."
+  ]
+}
