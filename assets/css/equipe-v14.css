@@ -6,6 +6,7 @@
 html,body{max-width:100%;overflow-x:hidden}
 img,video,canvas,svg{max-width:100%;height:auto}
 button,input,select,textarea{max-width:100%}
+.governed-profile-item{border-left-color:#34d399;background:rgba(52,211,153,.08)}
 @media(max-width:760px){
   .container,.wrap,.page,main{max-width:100%;}
   nav,.nav,.menu,.links,.nav-links,.actions,.link-actions,.social-links,.origin-links{flex-wrap:wrap;}

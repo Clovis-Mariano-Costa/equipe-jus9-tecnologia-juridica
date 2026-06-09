@@ -2,6 +2,7 @@
   var authOrigin = 'https://jus9tecnologia.com.br';
   var list = document.querySelector('[data-profile-review-list]');
   var auditList = document.querySelector('[data-profile-audit-list]');
+  var governedProfileList = document.querySelector('[data-governed-profile-list]');
   var status = document.querySelector('[data-profile-review-status]');
   var reload = document.querySelector('[data-profile-review-reload]');
   if(!list) return;
@@ -55,6 +56,22 @@
     }).join('');
   }
 
+  function renderGovernedProfiles(items){
+    if(!governedProfileList) return;
+    if(!items.length){
+      governedProfileList.innerHTML = '<p class="small">Nenhum perfil aprovado registrado ainda.</p>';
+      return;
+    }
+    governedProfileList.innerHTML = items.map(function(item){
+      return '<article class="notice governed-profile-item">' +
+        '<strong>' + escapeHtml(item.name || 'sem nome') + '</strong>' +
+        '<p>' + escapeHtml(item.email || 'sem e-mail') + ' | ' + escapeHtml(item.profile || 'sem perfil') + ' | ' + escapeHtml(item.scope || 'sem escopo') + '</p>' +
+        '<p class="small">Modulo: ' + escapeHtml(item.module || 'sem modulo') + ' | Status: ' + escapeHtml(item.status || 'ativo') + '</p>' +
+        '<p class="small">Origem: ' + escapeHtml(item.origin || 'nao informada') + ' | Aprovado por: ' + escapeHtml(item.approvedByProfile || 'nao informado') + ' | ' + escapeHtml(item.approvedAt || '') + '</p>' +
+      '</article>';
+    }).join('');
+  }
+
   async function sendAction(id, action){
     var notesField = document.querySelector('[data-review-notes="' + CSS.escape(id) + '"]');
     var notes = notesField ? notesField.value : '';
@@ -99,10 +116,12 @@
       setStatus('Solicitacoes carregadas para revisao humana.');
       render(payload.items || []);
       loadAudit();
+      loadGovernedProfiles();
     } catch (_) {
       setStatus('Falha temporaria ao consultar o backend governado.');
       render([]);
       renderAudit([]);
+      renderGovernedProfiles([]);
     }
   }
 
@@ -121,6 +140,24 @@
       renderAudit(payload.items || []);
     } catch (_) {
       renderAudit([]);
+    }
+  }
+
+  async function loadGovernedProfiles(){
+    if(!governedProfileList) return;
+    try {
+      var response = await fetch(authOrigin + '/api/governed-profiles', {
+        credentials: 'include',
+        cache: 'no-store'
+      });
+      var payload = await response.json().catch(function(){ return null; });
+      if(!response.ok || !payload || !payload.ok){
+        renderGovernedProfiles([]);
+        return;
+      }
+      renderGovernedProfiles(payload.items || []);
+    } catch (_) {
+      renderGovernedProfiles([]);
     }
   }
 
