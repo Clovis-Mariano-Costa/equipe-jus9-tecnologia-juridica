@@ -28,8 +28,32 @@
         '<p class="small">' + escapeHtml(item.module || 'sem modulo') + ' | ' + escapeHtml(item.status || 'pendente') + '</p>' +
         '<p class="small">Protocolo: ' + escapeHtml(item.id) + '</p>' +
         '<p class="small">Origem: ' + escapeHtml(item.origin || 'nao informada') + ' | Solicitante: ' + escapeHtml(item.requesterProfile || 'nao informado') + ' | ' + escapeHtml(item.createdAt || '') + '</p>' +
+        '<label class="small">Observacao da revisao<textarea rows="2" data-review-notes="' + escapeHtml(item.id) + '" placeholder="Motivo ou cuidado humano."></textarea></label>' +
+        '<div class="review-actions">' +
+          '<button class="btn primary" type="button" data-review-action="aprovar" data-review-id="' + escapeHtml(item.id) + '">Aprovar</button>' +
+          '<button class="btn" type="button" data-review-action="pendente" data-review-id="' + escapeHtml(item.id) + '">Pendente</button>' +
+          '<button class="btn danger" type="button" data-review-action="reprovar" data-review-id="' + escapeHtml(item.id) + '">Reprovar</button>' +
+        '</div>' +
       '</article>';
     }).join('');
+  }
+
+  async function sendAction(id, action){
+    var notesField = document.querySelector('[data-review-notes="' + CSS.escape(id) + '"]');
+    var notes = notesField ? notesField.value : '';
+    setStatus('Registrando decisao governada...');
+    var response = await fetch(authOrigin + '/api/profile-requests/action', {
+      method: 'POST',
+      credentials: 'include',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id: id, action: action, notes: notes })
+    });
+    var payload = await response.json().catch(function(){ return null; });
+    if(!response.ok || !payload || !payload.ok){
+      throw new Error((payload && (payload.error || payload.message)) || 'acao_nao_confirmada');
+    }
+    setStatus('Decisao registrada: ' + payload.status + '.');
+    await load();
   }
 
   async function load(){
@@ -64,5 +88,17 @@
   }
 
   if(reload) reload.addEventListener('click', load);
+  list.addEventListener('click', async function(event){
+    var button = event.target.closest('[data-review-action]');
+    if(!button) return;
+    button.disabled = true;
+    try {
+      await sendAction(button.getAttribute('data-review-id'), button.getAttribute('data-review-action'));
+    } catch (error) {
+      setStatus('Nao foi possivel registrar decisao. Motivo: ' + (error.message || 'falha temporaria') + '.');
+    } finally {
+      button.disabled = false;
+    }
+  });
   load();
 })();
