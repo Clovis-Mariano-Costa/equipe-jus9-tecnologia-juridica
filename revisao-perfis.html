@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Revisao de Perfis | Equipe Jus 9</title>
+  <link rel="stylesheet" href="assets/css/equipe-v14.css">
+  <link rel="stylesheet" href="assets/css/visual-jus9-fase-final.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header>
+  <nav>
+    <a class="primary" href="/">Equipe Jus 9</a>
+    <a href="cadastros.html">Cadastros</a>
+    <a href="revisao-perfis.html">Revisao</a>
+    <a href="config/identidade-governada-charlie-echo.json">Matriz</a>
+    <a href="https://jus9tecnologia.com.br/auth/google/start?return_to=https%3A%2F%2Fequipe.jus9tecnologia.com.br%2Frevisao-perfis.html">Entrar</a>
+  </nav>
+</header>
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <span class="badge">Auditoria interna</span>
+      <h1>Revisao de solicitacoes de perfil.</h1>
+      <p>Lista governada para conferir cadastros enviados pela Equipe, Laboratorio e Universidade antes de qualquer aprovacao final.</p>
+    </div>
+    <div class="card">
+      <h2>Regra</h2>
+      <p>Esta tela revisa solicitacoes. Ela nao aprova cargo, nao concede cofre e nao transforma rascunho em permissao definitiva.</p>
+    </div>
+  </section>
+
+  <section class="card" data-auth-central>
+    <span class="badge">Sessao</span>
+    <h2>Perfil de revisao</h2>
+    <p data-auth-status>Verificando sessao Google autorizada...</p>
+    <p class="small" data-auth-identity hidden></p>
+    <p><a class="btn primary" data-auth-login href="https://jus9tecnologia.com.br/auth/google/start?return_to=https%3A%2F%2Fequipe.jus9tecnologia.com.br%2Frevisao-perfis.html">Entrar com Google</a></p>
+    <div data-auth-permissions hidden></div>
+  </section>
+
+  <section class="card">
+    <div class="section-row">
+      <div>
+        <span class="badge">Solicitacoes</span>
+        <h2>Fila de revisao humana</h2>
+      </div>
+      <button class="btn" type="button" data-profile-review-reload>Atualizar</button>
+    </div>
+    <p class="small" data-profile-review-status>Preparando consulta governada...</p>
+    <div data-profile-review-list></div>
+  </section>
+</main>
+<footer>Jus 9 Tecnologia Juridica - revisao humana, autoria preservada.</footer>
+<script src="assets/js/auth-central.js"></script>
+<script src="assets/js/revisao-perfis.js"></script>
+</body>
+</html>
