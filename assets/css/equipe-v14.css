@@ -13,3 +13,58 @@ button,input,select,textarea{max-width:100%}
   .grid,.grid2,.grid-2,.grid-3,.grid-4,.cards3,.profile-grid,.demo-grid,.demo-grid-2,.workbench,.timeline,.footer-grid{grid-template-columns:1fr!important;}
   table{display:block;width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;}
 }
+
+/* Pacote visual 4.2 - cadastros e revisao de perfis */
+.card{
+  border-radius:8px;
+}
+.hero .card,
+form.card,
+[data-auth-central],
+.profile-review-item,
+.governed-profile-item{
+  background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.045));
+  border-color:rgba(217,173,89,.24);
+}
+form.card{
+  display:grid;
+  gap:.15rem;
+}
+form.card label{
+  display:grid;
+  gap:.38rem;
+  margin:.55rem 0;
+  color:#eef6ff;
+  font-weight:850;
+}
+input,select,textarea{
+  min-height:46px;
+  border-radius:8px;
+  background:rgba(255,255,255,.10);
+  transition:border-color .16s ease, box-shadow .16s ease, background .16s ease;
+}
+textarea{resize:vertical}
+input:focus,select:focus,textarea:focus{
+  outline:none;
+  border-color:rgba(217,173,89,.72);
+  box-shadow:0 0 0 4px rgba(217,173,89,.14);
+  background:rgba(255,255,255,.14);
+}
+input[type="file"]::file-selector-button{
+  border:0;
+  border-radius:8px;
+  background:linear-gradient(135deg,var(--gold),#f3d790);
+  color:#111827;
+  padding:.55rem .75rem;
+  margin-right:.75rem;
+  font-weight:900;
+}
+.review-actions .btn,
+.tabs .btn,
+button.btn{
+  min-height:42px;
+  border-radius:8px;
+}
+@media(max-width:760px){
+  nav a,.btn{border-radius:8px}
+}
