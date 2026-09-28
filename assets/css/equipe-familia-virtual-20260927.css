@@ -57,3 +57,33 @@ a{color:inherit}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}
 .visual-pair figcaption{font-size:.74rem;color:#52677d;text-align:center}
 @media(max-width:980px){.team-portraits{max-width:650px}.human-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:620px){.team-portraits{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.team-portraits .avatar-hero img{height:250px;border-radius:20px 20px 0 0}.team-portraits .avatar-caption{position:static;min-height:88px;border-radius:0 0 14px 14px}.human-grid{grid-template-columns:1fr}}
+
+/* Cards documentais e página de egressos */
+.family-grid .member{display:flex;flex-direction:column;align-items:flex-start}
+.family-grid .member .visual-pair{width:100%}
+.family-grid .member .visual-pair img,.family-grid .member .visual-pair svg,.virtual-photo{width:100%;aspect-ratio:1/1;display:block;border-radius:14px;overflow:hidden}
+.family-grid .member .visual-pair img{border-radius:14px}
+.family-grid .member .visual-pair figcaption{line-height:1.25;margin-top:5px}
+.family-grid .member p:last-child{margin-top:auto;padding-top:12px}
+.family-grid .member .btn{background:#102b48;color:#fff;font-size:.87rem}
+.virtual-photo{position:relative;display:grid;place-items:center;color:#fff;background:
+  radial-gradient(circle at 68% 28%,hsla(var(--hue),90%,72%,.9),transparent 16%),
+  radial-gradient(ellipse at 33% 70%,hsla(calc(var(--hue) + 42),78%,53%,.85),transparent 31%),
+  conic-gradient(from 40deg at 50% 50%,#091c32,hsl(var(--hue) 55% 38%),#081b32,hsl(calc(var(--hue) + 35) 66% 32%),#091c32)}
+.virtual-photo:before,.virtual-photo:after{content:"";position:absolute;border:1px solid rgba(255,255,255,.45);border-radius:42% 58% 62% 38%;width:68%;height:40%;transform:rotate(-29deg)}
+.virtual-photo:after{width:39%;height:72%;transform:rotate(46deg);border-color:rgba(255,231,169,.65)}
+.virtual-photo span{font:700 clamp(36px,5vw,62px) Georgia,serif;opacity:.85;z-index:1;text-shadow:0 4px 18px #081522}
+.alumni-link{margin:24px 0}
+.alumni-hero{background:linear-gradient(125deg,#061426,#153957);padding:64px 0 58px;border-bottom:1px solid var(--line)}
+.alumni-hero h1,.profile-page h1{font:700 clamp(38px,6vw,66px)/1.05 Georgia,serif;margin:10px 0 18px}
+.alumni-hero p{max-width:790px;font-size:1.15rem;color:#d8e4ef}
+.profile-page{background:#f4f0e7;color:var(--ink);min-height:75vh;padding:30px 0 70px}
+.profile-page .eyebrow{color:#88621a}
+.profile-page .back-link{color:#244c70}
+.profile-lead{font-size:1.18rem;max-width:850px;color:#485f74}
+.profile-columns{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:24px 0}
+.profile-columns .visual-pair{max-width:520px}
+.profile-columns .visual-pair img,.profile-columns .visual-pair svg,.profile-columns .virtual-photo{width:100%;aspect-ratio:1/1;display:block;border-radius:16px;object-fit:cover}
+.profile-page .panel p{color:#52677d}
+.profile-page .small{font-size:.87rem}
+@media(max-width:700px){.profile-columns{grid-template-columns:1fr}}
