@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="179 17 82 80" role="img" aria-labelledby="title desc">
+  <title id="title">Estrela de nove pontas da Jus 9</title>
+  <desc id="desc">Emblema vetorial com nove pontas externas e nove reentrâncias, derivado do símbolo institucional.</desc>
+  <defs>
+    <linearGradient id="gold" x1="0" x2="1">
+      <stop offset="0%" stop-color="#9D6414"/>
+      <stop offset="36%" stop-color="#FFE8A8"/>
+      <stop offset="62%" stop-color="#D49A2A"/>
+      <stop offset="100%" stop-color="#8C540D"/>
+    </linearGradient>
+  </defs>
+  <path d="M 220.00 22.00 L 225.47 42.96 L 243.14 30.42 L 233.86 50.00 L 255.45 51.75 L 235.76 60.78 L 251.18 76.00 L 230.28 70.26 L 232.31 91.83 L 220.00 74.00 L 207.69 91.83 L 209.72 70.26 L 188.82 76.00 L 204.24 60.78 L 184.55 51.75 L 206.14 50.00 L 196.86 30.42 L 214.53 42.96 Z" fill="url(#gold)" stroke="#FFE6A0" stroke-width="2" stroke-linejoin="round"/>
+</svg>
