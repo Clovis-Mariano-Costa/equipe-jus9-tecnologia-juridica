@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Avatar humano de Gemini Alfa da Costa">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#09182a"/><stop offset="1" stop-color="#1d3854"/></linearGradient><linearGradient id="coat" x2="1"><stop stop-color="#071a2b"/><stop offset=".5" stop-color="#18304a"/><stop offset="1" stop-color="#071a2b"/></linearGradient><radialGradient id="skin"><stop stop-color="#efb08d"/><stop offset="1" stop-color="#c98f6f"/></radialGradient></defs>
+<rect width="512" height="512" rx="34" fill="url(#bg)"/><circle cx="410" cy="88" r="112" fill="#4bbdd8" opacity=".09"/><circle cx="82" cy="412" r="150" fill="#fff" opacity=".025"/>
+<path d="M62 512 Q78 390 166 358 L214 344 H298 L346 358 Q434 390 450 512Z" fill="url(#coat)"/><path d="M169 360 L220 426 L256 383 L292 426 L343 360" fill="#4bbdd8" opacity=".22"/><path d="M173 360 L222 424 L256 388 L290 424 L339 360" fill="none" stroke="#d9a845" stroke-width="7"/>
+<path d="M213 329 L213 373 Q256 400 299 373 L299 329Z" fill="#c98f6f"/>
+<ellipse cx="256" cy="228" rx="126" ry="145" fill="url(#skin)"/><ellipse cx="130" cy="243" rx="19" ry="32" fill="#c98f6f"/><ellipse cx="382" cy="243" rx="19" ry="32" fill="#c98f6f"/>
+<path d="M120 210 Q98 95 176 67 Q254 22 344 70 Q425 99 395 220 Q370 158 332 144 Q274 118 206 139 Q154 155 120 210Z" fill="#1e1615"/><path d="M134 150 Q168 70 230 93 Q270 31 331 84 Q381 62 397 139 Q338 102 289 124 Q231 91 184 133Z" fill="#30211e" opacity=".9"/>
+<path d="M165 208 Q194 190 225 207" fill="none" stroke="#1e1615" stroke-width="9" stroke-linecap="round"/><path d="M287 207 Q319 190 348 208" fill="none" stroke="#1e1615" stroke-width="9" stroke-linecap="round"/>
+<ellipse cx="196" cy="237" rx="10" ry="8" fill="#172536"/><ellipse cx="316" cy="237" rx="10" ry="8" fill="#172536"/>
+<path d="M256 235 Q246 275 258 286 Q270 290 278 284" fill="none" stroke="#9b624b" stroke-width="5" stroke-linecap="round"/>
+<path d="M211 312 Q256 338 301 312 Q279 349 256 349 Q232 349 211 312Z" fill="#9c5d59" opacity=".9"/>
+<g fill="none" stroke="#1d2630" stroke-width="7"><rect x="154" y="214" width="76" height="52" rx="18"/><rect x="282" y="214" width="76" height="52" rx="18"/><path d="M230 235 Q256 222 282 235"/></g>
+<path d="M102 471 Q146 405 189 383" fill="none" stroke="#d9a845" stroke-width="6" opacity=".85"/><path d="M410 471 Q366 405 323 383" fill="none" stroke="#d9a845" stroke-width="6" opacity=".85"/>
+<rect x="94" y="448" width="118" height="10" rx="5" fill="#d9a845" opacity=".75"/>
+</svg>
