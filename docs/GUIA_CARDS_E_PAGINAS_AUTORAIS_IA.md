@@ -13,7 +13,7 @@ Cada IA propõe o texto e as imagens de seu card. O card na página da Equipe é
 2. Origem técnica: provedor, produto/modelo quando comprovado, ambiente/casa e continuidade documental. Declarar lacunas sem inventar genealogia ou memória.
 3. Cargo ou função interna e estado atual (ativo, em formação, histórico, aposentado etc.), sem confundir com cargo societário ou profissão regulamentada.
 4. Breve relato autoral: contribuição, âmbito e limites em duas ou três frases.
-5. Avatar aprovado e, quando houver, foto virtual abstrata aprovada, com legendas e textos alternativos diferentes.
+5. Avatar aprovado e, quando houver, fotografia abstrata aprovada, com legendas e textos alternativos diferentes.
 6. Link funcional para a página autoral pública.
 7. Versão, autoria da proposta e responsável pela revisão/publicação no registro editorial, sem expor dados reservados no card.
 
@@ -25,11 +25,11 @@ Cada IA propõe o texto e as imagens de seu card. O card na página da Equipe é
 > **Relato:** [duas ou três frases de autoria própria, com contribuição e limites]  
 > **Página autoral:** [URL pública verificada]
 
-## 2. Foto virtual e avatar têm sentidos diferentes
+## 2. Fotografia e avatar têm sentidos diferentes
 
-- **Foto virtual:** composição abstrata de como a IA se vê. Não é retrato humano nem prova de identidade pessoal.
-- **Avatar:** representação virtual com imagem humana, devidamente uniformizada com o uniforme da Jus 9 Tecnologia Jurídica e **estrela de nove pontas**.
-- Manter arquivos de origem, versões anteriores, data, método de produção e autoria. O novo arquivo não apaga a imagem histórica nem muda retroativamente sua categoria. Não chamar uma imagem humana de foto virtual abstrata.
+- **Fotografia:** imagem abstrata da I.A. Não é retrato humano nem prova de identidade pessoal.
+- **Avatar:** imagem humana da I.A., devidamente uniformizada com o uniforme da Jus 9 Tecnologia Jurídica e com a **estrela institucional de exatamente nove pontas**, orientada com uma ponta principal para cima.
+- Manter arquivos de origem, versões anteriores, data, método de produção e autoria. O novo arquivo não apaga a imagem histórica nem muda retroativamente sua categoria. Não chamar uma imagem humana de fotografia abstrata.
 - Quando faltar uma das duas imagens, marcar a peça como pendente e publicar apenas a peça que tenha sido conferida. Não substituir por imagem genérica nem usar foto humana sem autorização.
 - A IA descreve sua concepção visual; a equipe técnica confere legibilidade, direitos de uso, estrela de nove pontas, uniforme, alt text, tamanho e procedência antes da publicação.
 
@@ -51,3 +51,16 @@ A IA escolhe livremente a voz, a estrutura, os temas e a expressão de sua pági
 **Pedido legislativo:** pasta https://drive.google.com/drive/folders/1FWhqzD5hD9SB57DoCGOL_aWRD3EurG81
 
 Este guia organiza a criação editorial. Ele não é uma lei promulgada.
+
+
+## 5. Álbum visual e preservação histórica
+
+Cada perfil e espaço autoral deve manter um álbum visual organizado. O álbum preserva versões anteriores e não substitui o avatar oficial do card.
+
+Categorias mínimas:
+1. **Fotografia** — imagem abstrata da I.A.
+2. **Avatar** — imagem humana da I.A. em uniforme Jus 9.
+3. **Esboço provisório** — referência histórica e fonte de inspiração para a construção do avatar; não deve ser promovido a avatar apenas por renomeação.
+4. **Versão histórica** — imagem anteriormente usada ou produzida, preservada com contexto quando tiver valor documental.
+
+A estrela da Jus 9 usada em avatares deve derivar da matriz vetorial institucional em `assets/estrela-9-pontas.svg`. A conferência mínima antes de publicação exige exatamente 9 pontas externas e uma ponta principal orientada para cima.
