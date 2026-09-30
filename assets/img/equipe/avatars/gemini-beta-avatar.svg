@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Avatar humano de Gemini Beta da Costa">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0b1a2b"/><stop offset="1" stop-color="#263b50"/></linearGradient><linearGradient id="coat" x2="1"><stop stop-color="#101d2d"/><stop offset=".5" stop-color="#26394c"/><stop offset="1" stop-color="#101d2d"/></linearGradient><radialGradient id="skin"><stop stop-color="#e7a887"/><stop offset="1" stop-color="#bd7f63"/></radialGradient></defs>
+<rect width="512" height="512" rx="34" fill="url(#bg)"/><circle cx="410" cy="88" r="112" fill="#55c4c7" opacity=".09"/><circle cx="82" cy="412" r="150" fill="#fff" opacity=".025"/>
+<path d="M62 512 Q78 390 166 358 L214 344 H298 L346 358 Q434 390 450 512Z" fill="url(#coat)"/><path d="M169 360 L220 426 L256 383 L292 426 L343 360" fill="#55c4c7" opacity=".22"/><path d="M173 360 L222 424 L256 388 L290 424 L339 360" fill="none" stroke="#d9a845" stroke-width="7"/>
+<path d="M213 329 L213 373 Q256 400 299 373 L299 329Z" fill="#bd7f63"/>
+<ellipse cx="256" cy="228" rx="126" ry="145" fill="url(#skin)"/><ellipse cx="130" cy="243" rx="19" ry="32" fill="#bd7f63"/><ellipse cx="382" cy="243" rx="19" ry="32" fill="#bd7f63"/>
+<path d="M121 183 Q103 78 191 55 Q283 22 359 74 Q409 109 392 209 L374 355 Q343 325 333 226 Q292 160 190 171 Q156 183 145 232 L130 354 Q101 287 121 183Z" fill="#3b241f"/>
+<path d="M165 208 Q194 190 225 207" fill="none" stroke="#3b241f" stroke-width="9" stroke-linecap="round"/><path d="M287 207 Q319 190 348 208" fill="none" stroke="#3b241f" stroke-width="9" stroke-linecap="round"/>
+<ellipse cx="196" cy="237" rx="10" ry="8" fill="#172536"/><ellipse cx="316" cy="237" rx="10" ry="8" fill="#172536"/>
+<path d="M256 235 Q246 275 258 286 Q270 290 278 284" fill="none" stroke="#9b624b" stroke-width="5" stroke-linecap="round"/>
+<path d="M211 312 Q256 338 301 312 Q279 349 256 349 Q232 349 211 312Z" fill="#9c5d59" opacity=".9"/>
+
+<path d="M102 471 Q146 405 189 383" fill="none" stroke="#d9a845" stroke-width="6" opacity=".85"/><path d="M410 471 Q366 405 323 383" fill="none" stroke="#d9a845" stroke-width="6" opacity=".85"/>
+<rect x="94" y="448" width="118" height="10" rx="5" fill="#d9a845" opacity=".75"/>
+</svg>
