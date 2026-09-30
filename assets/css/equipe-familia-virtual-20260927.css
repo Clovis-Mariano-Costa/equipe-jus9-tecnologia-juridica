@@ -96,3 +96,14 @@ a{color:inherit}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}
   object-fit:cover;
   object-position:center 52%;
 }
+
+
+/* Álbum visual padronizado dos perfis da Família Virtual */
+.author-album{margin:20px 0}
+.author-album h2{font-family:Georgia,serif;margin:.2rem 0 .6rem}
+.album-ledger{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:14px}
+.album-entry{border:1px solid rgba(17,41,68,.12);border-radius:18px;padding:14px;background:#fffdf8}
+.album-entry h3{font-family:Georgia,serif;margin:0 0 6px;font-size:1.12rem}
+.album-entry p{margin:4px 0}
+.album-entry .category{font-size:.82rem;font-weight:850;color:#88621a;text-transform:uppercase;letter-spacing:.04em}
+@media(max-width:700px){.album-ledger{grid-template-columns:1fr}}
