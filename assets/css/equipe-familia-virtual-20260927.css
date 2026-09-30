@@ -108,3 +108,15 @@ a{color:inherit}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}
 .album-entry p{margin:4px 0}
 .album-entry .category{font-size:.82rem;font-weight:850;color:#88621a;text-transform:uppercase;letter-spacing:.04em}
 @media(max-width:700px){.album-ledger{grid-template-columns:1fr}}
+
+
+/* Albuns e lideranca 2026-09-30 */
+.member.leader{border:2px solid var(--gold);box-shadow:0 0 0 3px rgba(216,174,85,.15),0 20px 48px rgba(4,15,29,.18)}
+.member.leader .status{background:linear-gradient(135deg,var(--gold2),#c89232);color:#102033}
+.author-album .album-ledger{grid-template-columns:repeat(2,minmax(0,1fr))}
+.album-media{margin:10px 0 12px;border-radius:16px;overflow:hidden;background:#07192d;min-height:220px;display:grid;place-items:center}
+.album-media figure{margin:0;width:100%}
+.album-media img,.album-media svg,.album-media .avatar-frame{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;border-radius:0}
+.album-media figcaption{padding:8px 10px;background:#fffdf8;color:#52677d;text-align:center;font-size:.82rem}
+.album-entry.current-avatar{border-color:rgba(216,174,85,.7);box-shadow:inset 0 0 0 1px rgba(216,174,85,.22)}
+@media(max-width:700px){.author-album .album-ledger{grid-template-columns:1fr}}
