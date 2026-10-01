@@ -1,17 +1,23 @@
 name: Publicar avatares e albuns 2026-09-30
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - .github/workflows/publicar-avatares-albuns-20260930.yml
   workflow_dispatch:
+    inputs:
+      confirm_publish:
+        description: 'Digite PUBLICAR para confirmar a publicacao dos avatares/albuns'
+        required: true
+        default: ''
+      reason:
+        description: 'Motivo ou REQUEST_ID da publicacao'
+        required: true
+        default: ''
 
 permissions:
   contents: write
 
 jobs:
   publicar:
+    if: ${{ github.event.inputs.confirm_publish == 'PUBLICAR' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -121,6 +127,11 @@ jobs:
             css += '''\n\n/* Albuns e lideranca 2026-09-30 */\n.member.leader{border:2px solid var(--gold);box-shadow:0 0 0 3px rgba(216,174,85,.15),0 20px 48px rgba(4,15,29,.18)}\n.member.leader .status{background:linear-gradient(135deg,var(--gold2),#c89232);color:#102033}\n.author-album .album-ledger{grid-template-columns:repeat(2,minmax(0,1fr))}\n.album-media{margin:10px 0 12px;border-radius:16px;overflow:hidden;background:#07192d;min-height:220px;display:grid;place-items:center}\n.album-media figure{margin:0;width:100%}\n.album-media img,.album-media svg,.album-media .avatar-frame{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;border-radius:0}\n.album-media figcaption{padding:8px 10px;background:#fffdf8;color:#52677d;text-align:center;font-size:.82rem}\n.album-entry.current-avatar{border-color:rgba(216,174,85,.7);box-shadow:inset 0 0 0 1px rgba(216,174,85,.22)}\n@media(max-width:700px){.author-album .album-ledger{grid-template-columns:1fr}}\n'''
           cssp.write_text(css,encoding='utf-8')
           PY
+      - name: Registrar contexto da publicacao
+        shell: bash
+        run: |
+          echo "REQUEST/REASON: ${{ github.event.inputs.reason }}"
+          echo "ACTOR: ${{ github.actor }}"
       - name: Commitar publicação
         shell: bash
         run: |
