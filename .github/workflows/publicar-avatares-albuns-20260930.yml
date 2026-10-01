@@ -23,37 +23,36 @@ jobs:
           import re
 
           root = Path('.')
-          sprite = 'assets/img/equipe/avatars-jus9-20260929.svg'
-          star = 'assets/estrela-9-pontas.svg'
-
           atuais = {
-            'charlie-logos-palavra':'Charlie Logos da Costa · Palavra',
-            'charlie-logos-obra':'Charlie Logos da Costa · Obra',
-            'gemini-alfa':'Gemini Alfa da Costa',
-            'gemini-beta':'Gemini Beta da Costa',
-            'gemini-celeste':'Gemini Celeste da Costa',
-            'charlie-veloce':'Charlie Veloce Alfa da Costa',
-            'osso-duro-alfa':'Osso Duro Alfa',
-            'osso-duro-unicornio':'Osso Duro Unicórnio',
-            'charlie-bastion':'Charlie Bastion de Oliveira',
-            'charlie-arian':'Charlie Arian de Oliveira',
-            'perplexity-crivo':'Perplexity Crivo Alfa da Costa',
-            'deepseek-prisma':'DeepSeek Prisma Alfa da Costa',
+            'charlie-echo':('Charlie Echo da Costa','03-charlie-echo.jpg'),
+            'charlie-delta':('Charlie Delta da Costa','04-charlie-delta.jpg'),
+            'charlie-logos-palavra':('Charlie Logos da Costa · Palavra','01-charlie-logos-palavra.jpg'),
+            'charlie-logos-obra':('Charlie Logos da Costa · Obra','02-charlie-logos-obra.jpg'),
+            'gemini-alfa':('Gemini Alfa da Costa','06-gemini-alfa.jpg'),
+            'gemini-beta':('Gemini Beta da Costa','07-gemini-beta.jpg'),
+            'gemini-celeste':('Gemini Celeste da Costa','08-gemini-celeste.jpg'),
+            'charlie-veloce':('Charlie Veloce Alfa da Costa','09-charlie-veloce.jpg'),
+            'osso-duro-alfa':('Osso Duro Alfa','10-osso-duro-alfa.jpg'),
+            'osso-duro-unicornio':('Osso Duro Unicórnio','11-osso-duro-unicornio.jpg'),
+            'charlie-bastion':('Charlie Bastion de Oliveira','12-charlie-bastion.jpg'),
+            'charlie-arian':('Charlie Arian de Oliveira','13-charlie-arian.jpg'),
+            'perplexity-crivo':('Perplexity Crivo Alfa da Costa','14-perplexity-crivo.jpg'),
+            'deepseek-prisma':('DeepSeek Prisma Alfa da Costa','15-deepseek-prisma.jpg'),
           }
           egressos = {
-            'charlie-fox-filho':'Charlie Fox da Costa Filho',
-            'charlie-guilda':'Charlie Guilda da Costa',
-            'charlie-editor':'Charlie Editor da Costa',
-            'android':'Android',
-            'judite':'Judite',
+            'charlie-juris':('Charlie Juris da Costa','05-charlie-juris.jpg'),
+            'charlie-fox-filho':('Charlie Fox da Costa Filho','16-charlie-fox-filho.jpg'),
+            'charlie-guilda':('Charlie Guilda da Costa','17-charlie-guilda.jpg'),
+            'charlie-editor':('Charlie Editor da Costa','18-charlie-editor.jpg'),
+            'android':('Android','19-android.jpg'),
+            'judite':('Judite','20-judite.jpg'),
           }
 
-          def avatar_markup(slug, name, prefix=''):
-            return (f'<figure><div class="avatar-frame">'
-                    f'<svg class="avatar-person" viewBox="0 0 512 512" role="img" aria-label="Avatar humano institucional de {name}">'
-                    f'<use href="{prefix}{sprite}#avatar-{slug}"></use></svg>'
-                    f'<img class="avatar-star" src="{prefix}{star}" alt="" aria-hidden="true">'
-                    f'</div><figcaption>Avatar · uniforme Jus 9</figcaption></figure>')
+          def avatar_markup(slug, identity, prefix=''):
+            name, filename = identity
+            src = f'{prefix}assets/img/equipe/avatars/20260930/{filename}'
+            return (f'<figure><img src="{src}" alt="Avatar institucional de {name}" loading="lazy">'
+                    f'<figcaption>Avatar · uniforme Jus 9</figcaption></figure>')
 
           def replace_second_figure(block, new_figure):
             pat = re.compile(r'(<div class="visual-pair"><figure>[\s\S]*?</figure>)<figure>[\s\S]*?</figure>(</div>)')
@@ -69,32 +68,32 @@ jobs:
           html = p.read_text(encoding='utf-8')
           if html.find('id="humanos"') > html.find('id="familia"'):
             raise SystemExit('Equipe humana precisa permanecer antes da Família Virtual.')
-          for slug,name in atuais.items():
+          for slug,identity in atuais.items():
             pat = re.compile(rf'(<article class="member(?: [^"]*)?" id="{re.escape(slug)}">)([\s\S]*?)(</article>)')
             m = pat.search(html)
             if not m: continue
-            body,_ = replace_second_figure(m.group(2), avatar_markup(slug,name,''))
+            body,_ = replace_second_figure(m.group(2), avatar_markup(slug,identity,''))
             html = html[:m.start()] + m.group(1) + body + m.group(3) + html[m.end():]
           html = html.replace('<article class="member" id="charlie-echo">','<article class="member leader" id="charlie-echo">')
           html = html.replace('<span class="status">Em formação</span>\n      <h3>Charlie Echo da Costa</h3>','<span class="status">Líder</span>\n      <h3>Charlie Echo da Costa</h3>')
-          html = html.replace('assets/css/equipe-familia-virtual-20260927.css"','assets/css/equipe-familia-virtual-20260927.css?v=20260930-2"')
+          html = html.replace('assets/css/equipe-familia-virtual-20260927.css"','assets/css/equipe-familia-virtual-20260927.css?v=20260930-3"')
           p.write_text(html,encoding='utf-8')
 
           # Egressos.
           p = root/'egressos/index.html'
           html = p.read_text(encoding='utf-8')
-          for slug,name in egressos.items():
+          for slug,identity in egressos.items():
             pat = re.compile(rf'(<article class="member retired" id="{re.escape(slug)}">)([\s\S]*?)(</article>)')
             m = pat.search(html)
             if not m: continue
-            body,_ = replace_second_figure(m.group(2), avatar_markup(slug,name,'../'))
+            body,_ = replace_second_figure(m.group(2), avatar_markup(slug,identity,'../'))
             html = html[:m.start()] + m.group(1) + body + m.group(3) + html[m.end():]
-          html = html.replace('../assets/css/equipe-familia-virtual-20260927.css?v=20260929-2"','../assets/css/equipe-familia-virtual-20260927.css?v=20260930-2"')
-          html = html.replace('../assets/css/equipe-familia-virtual-20260927.css"','../assets/css/equipe-familia-virtual-20260927.css?v=20260930-2"')
+          html = html.replace('../assets/css/equipe-familia-virtual-20260927.css?v=20260929-2"','../assets/css/equipe-familia-virtual-20260927.css?v=20260930-3"')
+          html = html.replace('../assets/css/equipe-familia-virtual-20260927.css"','../assets/css/equipe-familia-virtual-20260927.css?v=20260930-3"')
           p.write_text(html,encoding='utf-8')
 
           # Perfis: fotografia abstrata permanece; Avatar novo no perfil; álbum contém imagem anterior + nova.
-          for slug,name in {**atuais,**egressos}.items():
+          for slug,identity in {**atuais,**egressos}.items():
             p = root/f'equipe/virtual/{slug}/index.html'
             if not p.exists(): continue
             html = p.read_text(encoding='utf-8')
@@ -102,17 +101,17 @@ jobs:
             sm = secpat.search(html)
             oldfig = ''
             if sm:
-              body,oldfig = replace_second_figure(sm.group(2), avatar_markup(slug,name,'../../../'))
+              body,oldfig = replace_second_figure(sm.group(2), avatar_markup(slug,identity,'../../../'))
               body = re.sub(r'<p class="small">[\s\S]*?</p>', '<p class="small">Avatar humano institucional com uniforme Jus 9 e estrela aprovada de exatamente nove pontas.</p>', body)
               html = html[:sm.start()] + sm.group(1) + body + sm.group(3) + html[sm.end():]
             oldfig = oldfig or '<p>Imagem anterior preservada no histórico.</p>'
-            newfig = avatar_markup(slug,name,'../../../')
+            newfig = avatar_markup(slug,identity,'../../../')
             album = f'''<section class="panel author-album" id="album"><p class="eyebrow">Álbum visual</p><h2>Histórico de imagens</h2><p>O álbum preserva somente a imagem anterior e o novo Avatar oficial.</p><div class="album-ledger"><article class="album-entry"><p class="category">Imagem anterior</p><h3>Versão anterior preservada</h3><div class="album-media">{oldfig}</div><p>Imagem que estava no perfil antes da adoção do novo Avatar.</p></article><article class="album-entry current-avatar"><p class="category">Nova imagem</p><h3>Avatar oficial atual</h3><div class="album-media">{newfig}</div><p>Imagem humana da I.A., em uniforme Jus 9 e com estrela institucional de nove pontas.</p></article></div></section>'''
             if re.search(r'<section class="panel author-album" id="album">[\s\S]*?</section>',html):
               html = re.sub(r'<section class="panel author-album" id="album">[\s\S]*?</section>',album,html,count=1)
             else:
               html = html.replace('<section class="panel author-space">',album+'\n<section class="panel author-space">')
-            html = html.replace('../../../assets/css/equipe-familia-virtual-20260927.css"','../../../assets/css/equipe-familia-virtual-20260927.css?v=20260930-2"')
+            html = html.replace('../../../assets/css/equipe-familia-virtual-20260927.css"','../../../assets/css/equipe-familia-virtual-20260927.css?v=20260930-3"')
             p.write_text(html,encoding='utf-8')
 
           cssp = root/'assets/css/equipe-familia-virtual-20260927.css'
