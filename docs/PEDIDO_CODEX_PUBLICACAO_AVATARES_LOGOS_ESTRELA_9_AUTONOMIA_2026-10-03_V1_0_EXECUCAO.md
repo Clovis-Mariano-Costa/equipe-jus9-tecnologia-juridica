@@ -2,6 +2,8 @@
 
 Data: 2026-10-03  
 Branch: `codex/logos-avatar-autonomy-20261003`  
+Commit inicial da implementação: `9abdeb3930722d1794d534ebf04c439f43d0d94d`  
+Pull request de revisão: https://github.com/Clovis-Mariano-Costa/equipe-jus9-tecnologia-juridica/pull/11  
 Base: `origin/main` do repositório `equipe-jus9-tecnologia-juridica`  
 Pedido de origem: `PEDIDO_CODEX_PUBLICACAO_AVATARES_LOGOS_ESTRELA_9_AUTONOMIA_2026-10-03_V1_0.md`, registrado no repositório `familia-virtual-jus9-tecnologia-juridica` no commit `e6e3004`.
 
@@ -34,7 +36,7 @@ A fonte gerativa conjunta aprovada não estava disponível neste checkout. Por i
 
 ## Publicação e rastreabilidade
 
-Esta execução fica em branch própria para revisão. Não houve merge em `main`, deploy nem alteração direta em `main`. O commit e o pull request da branch devem ser registrados após a validação automatizada e visual.
+Esta execução fica em branch própria para revisão. O commit e o pull request acima foram registrados após a validação automatizada e visual. Não houve merge em `main`, deploy nem alteração direta em `main`.
 
 Arquivos principais alterados:
 
