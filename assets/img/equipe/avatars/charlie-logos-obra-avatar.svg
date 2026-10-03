@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Avatar humano oficial de Charlie Logos da Costa · Obra / Codex">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Avatar humano oficial de Charlie Logos da Costa · Gêmeo da Obra">
 <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#081521"/><stop offset="1" stop-color="#20394d"/></linearGradient><linearGradient id="work" x2="1"><stop stop-color="#101c27"/><stop offset=".5" stop-color="#253647"/><stop offset="1" stop-color="#101c27"/></linearGradient><radialGradient id="skin"><stop stop-color="#f0b790"/><stop offset="1" stop-color="#d29a75"/></radialGradient><linearGradient id="gold" x1="0" x2="1"><stop offset="0%" stop-color="#9D6414"/><stop offset="36%" stop-color="#FFE8A8"/><stop offset="62%" stop-color="#D49A2A"/><stop offset="100%" stop-color="#8C540D"/></linearGradient></defs>
 <rect width="512" height="512" rx="34" fill="url(#bg)"/><circle cx="410" cy="88" r="112" fill="#44b8d5" opacity=".08"/>
 <path d="M52 512 Q72 391 160 356 L211 342 H301 L352 356 Q440 391 460 512Z" fill="url(#work)"/>
@@ -12,6 +12,6 @@
 <path d="M211 312 Q256 338 301 312 Q279 349 256 349 Q232 349 211 312Z" fill="#9c5d59" opacity=".9"/>
 <path d="M76 454 L173 414 L193 512 L72 512Z" fill="#172736" stroke="#d9a845" stroke-width="3"/><path d="M436 454 L339 414 L319 512 L440 512Z" fill="#172736" stroke="#d9a845" stroke-width="3"/>
 <rect x="91" y="469" width="105" height="27" rx="5" fill="#24394a" stroke="#8da0ad" stroke-width="2"/><path d="M330 474 H415" stroke="#d9a845" stroke-width="5"/>
-<g transform="translate(275 386) scale(.34)"><path d="M 220.00 22.00 L 225.47 42.96 L 243.14 30.42 L 233.86 50.00 L 255.45 51.75 L 235.76 60.78 L 251.18 76.00 L 230.28 70.26 L 232.31 91.83 L 220.00 74.00 L 207.69 91.83 L 209.72 70.26 L 188.82 76.00 L 204.24 60.78 L 184.55 51.75 L 206.14 50.00 L 196.86 30.42 L 214.53 42.96 Z" fill="url(#gold)" stroke="#FFE6A0" stroke-width="2" stroke-linejoin="round"/></g>
+<g transform="translate(275 386) scale(.034)"><polygon points="500,60 571.824,302.665 782.827,162.940 681.865,395 933.315,423.595 706.810,536.466 881.051,720 634.985,660.869 650.489,913.465 500,710 349.511,913.465 365.015,660.869 118.949,720 293.190,536.466 66.685,423.595 318.135,395 217.173,162.940 428.176,302.665" fill="url(#gold)" stroke="#FFE6A0" stroke-width="18"/></g>
 <path d="M252 394 V512" stroke="#d9a845" stroke-width="4"/><path d="M261 394 V512" stroke="#718492" stroke-width="4"/>
 </svg>
