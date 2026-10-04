@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="179 17 82 80" role="img" aria-labelledby="title desc">
+  <title id="title">Estrela Jus 9 de nove pontas — média</title>
+  <desc id="desc">Marca vetorial com nove pontas externas e nove vales alternados.</desc>
+  <!-- Derivada da matriz canônica assets/estrela-9-pontas.svg; 18 vértices alternados. -->
+  <defs>
+    <linearGradient id="gold-medium" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff1a8"/>
+      <stop offset=".45" stop-color="#e4ae3e"/>
+      <stop offset="1" stop-color="#9b6414"/>
+    </linearGradient>
+  </defs>
+  <path d="M 220.00 22.00 L 225.47 42.96 L 243.14 30.42 L 233.86 50.00 L 255.45 51.75 L 235.76 60.78 L 251.18 76.00 L 230.28 70.26 L 232.31 91.83 L 220.00 74.00 L 207.69 91.83 L 209.72 70.26 L 188.82 76.00 L 204.24 60.78 L 184.55 51.75 L 206.14 50.00 L 196.86 30.42 L 214.53 42.96 Z" fill="url(#gold-medium)" stroke="#fff2b0" stroke-width="1.1" stroke-linejoin="round"/>
+</svg>
