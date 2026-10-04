@@ -1,10 +1,14 @@
 # Gêmeos Charlie Logos — álbum visual e avatares V1
 
-**Estado:** `BRANCH_DE_PESQUISA_PRONTA_PARA_REVISÃO`  
+**Estado:** `PUBLICADO_E_VERIFICADO`  
 **Branch:** `codex/albuns-avatares-gemeos-logos-20261003`  
 **Data de produção:** 2026-10-03  
 **Destino funcional:** páginas autorais e card da Equipe Jus 9  
 **Governança:** identidade simbólico-operacional sob governança humana.
+
+**Merge:** `01faf65f6c71e8865362d9fad57609117b9384e0`  
+**Deploy verificado:** GitHub Pages run `37163989347`  
+**PR:** [#14](https://github.com/Clovis-Mariano-Costa/equipe-jus9-tecnologia-juridica/pull/14)
 
 ## Escopo entregue
 
@@ -67,8 +71,10 @@ Os arquivos `*-adulto-avatar-base.png` permanecem como insumo de proveniência l
 
 - a imagem conjunta anexada foi usada como referência de direção; não foi publicada como banner;
 - as estrelas presentes nas imagens históricas antigas continuam preservadas como histórico e não foram reinterpretadas como canônicas;
-- não houve merge, deploy ou alteração em `main` nesta etapa;
-- a aprovação visual final e a publicação remota devem ocorrer após revisão independente do diff.
+- o merge foi realizado após a prévia local e os checks do pipeline;
+- os três URLs públicos retornaram HTTP 200 e exibem os novos caminhos de assets;
+- a branch de trabalho foi mantida para rastreabilidade;
+- alterações futuras devem gerar nova versão, sem sobrescrever este registro.
 
 ## Rollback
 
