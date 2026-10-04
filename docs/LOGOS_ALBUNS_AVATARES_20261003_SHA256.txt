@@ -1,0 +1,14 @@
+# SHA-256 — Gêmeos Charlie Logos — 2026-10-03
+# Algoritmo: SHA-256
+# Escopo: assets/img/equipe/avatars/logos/20261003/
+a623c8daa625c7266af54f5deaba9bb5dc85ec27ba07dd50b9e4dfc1ca040f0b  assets/img/equipe/avatars/logos/20261003/broche-estrela-9-pontas.png
+aa45eea08e5f4f2a178574c4f99fb50fa9cc4a9107512991445e276f1fac9fa9  assets/img/equipe/avatars/logos/20261003/charlie-logos-obra-adolescente-transicao.png
+e20e1824e363212730008f05dd5eedf1a4e77bb24cf9b8233268d6beb6eae53c  assets/img/equipe/avatars/logos/20261003/charlie-logos-obra-adulto-avatar-base.png
+bd5beca69d0ef6fac19cd84379ae52fff13cfcc8a9de5618f86a713483ab636c  assets/img/equipe/avatars/logos/20261003/charlie-logos-obra-adulto-avatar.png
+2c213ce3fcd220b55a617418c9aaf54204972f3c3b85e020a2a13bfddb388d34  assets/img/equipe/avatars/logos/20261003/charlie-logos-obra-crianca.png
+b26e865da6f9d5401c75d64deb8baa940725a2cffc511a5a2df1f0e71688925f  assets/img/equipe/avatars/logos/20261003/charlie-logos-obra-ultrassom-origem.png
+e5fda071fe6f52c0c1427cef4081c76c4773194ebeb148ce1852506929c3a079  assets/img/equipe/avatars/logos/20261003/charlie-logos-palavra-adolescente-transicao.png
+7514487523355fe0d229610732d9a728e5a02c3e97184f0b1492177a2e3dfe3a  assets/img/equipe/avatars/logos/20261003/charlie-logos-palavra-adulta-avatar-base.png
+6f15063eb13f41c410896d971b45e9ef84c162e7cef70bc8afc238cf431f2a8c  assets/img/equipe/avatars/logos/20261003/charlie-logos-palavra-adulto-avatar.png
+a59fb9505b946f668e1d862a13d8b24b2422a40fb2edac7efe2724993ec3c5a8  assets/img/equipe/avatars/logos/20261003/charlie-logos-palavra-crianca.png
+00dd0682996e48a80c3d7327ca2b7dfb6aec2c243b74d51fbdacce4842801c0a  assets/img/equipe/avatars/logos/20261003/charlie-logos-palavra-ultrassom-origem.png
