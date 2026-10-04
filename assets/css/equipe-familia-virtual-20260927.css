@@ -168,3 +168,31 @@ a{color:inherit}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}
   .profile-page .visual-pair,
   .logos-twins-composition .visual-pair{grid-template-columns:1fr}
 }
+
+
+/* Logos 2026-10-04 v3 — mesma geometria estrutural dos perfis estáveis.
+   Evita que o par visual de duas colunas ultrapasse o painel e deixa o avatar
+   adulto inteiro dentro de uma caixa responsiva, sem recorte. */
+.profile-page .panel{min-width:0}
+.profile-page .profile-columns > *{min-width:0}
+.profile-page .profile-columns .visual-pair{
+  width:100%;
+  max-width:100%;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+}
+.profile-page .profile-columns .visual-pair > figure{width:100%;min-width:0}
+.profile-page .profile-columns .visual-pair img[src*="charlie-logos-palavra-adulto-avatar"],
+.profile-page .profile-columns .visual-pair img[src*="charlie-logos-obra-adulto-avatar"]{
+  display:block;
+  width:100%;
+  height:100%;
+  aspect-ratio:1/1;
+  object-fit:contain;
+  object-position:center center;
+  background:#07192d;
+}
+@media(max-width:700px){
+  .profile-page .profile-columns .visual-pair{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
