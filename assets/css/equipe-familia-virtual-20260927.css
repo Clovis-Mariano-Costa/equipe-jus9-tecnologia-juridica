@@ -1,25 +1,5 @@
 @import url("avatar-humano-20260929.css");
 
-/* ESTRELA-9-VARIANTES-20261004: a estrela aplicada ao uniforme é vetorial,
-   derivada da matriz canônica e independente de arte gerada por IA. */
-.avatar-with-brooch{position:relative;display:block;width:100%;}
-.avatar-with-brooch .avatar-art{position:relative;width:100%;aspect-ratio:1/1;overflow:hidden;border-radius:14px;background:#0b1d31;}
-.avatar-with-brooch .avatar-art>img:first-child{width:100%;height:100%;display:block;object-fit:cover;object-position:top center;border-radius:inherit;}
-.avatar-with-brooch .uniform-brooch{position:absolute;left:var(--brooch-x,62%);top:var(--brooch-y,65%);width:var(--brooch-size,18%);height:auto;transform:translate(-50%,-50%);filter:drop-shadow(0 2px 3px rgba(0,0,0,.45));pointer-events:none;z-index:2;}
-.avatar-with-brooch.logos-palavra{--brooch-x:68%;--brooch-y:67%;}
-.avatar-with-brooch.logos-obra{--brooch-x:59%;--brooch-y:65%;}
-.family-grid .avatar-with-brooch .avatar-art{border-radius:14px;}
-.profile-columns .avatar-with-brooch .avatar-art,.logos-twins-composition .avatar-with-brooch .avatar-art{border-radius:16px;}
-.album-media .avatar-with-brooch .avatar-art{border-radius:0;}
-.album-media .avatar-with-brooch .uniform-brooch{--brooch-size:20%;}
-.family-grid figure:has(>img[src*="charlie-logos-obra-adulto-avatar.png"]),.profile-page figure:has(>img[src*="charlie-logos-obra-adulto-avatar.png"]){position:relative;}
-.family-grid figure:has(>img[src*="charlie-logos-obra-adulto-avatar.png"])>img,.profile-page figure:has(>img[src*="charlie-logos-obra-adulto-avatar.png"])>img{content:url("../img/equipe/avatars/logos/20261003/charlie-logos-obra-adulto-avatar-base.png");}
-.family-grid figure:has(>img[src*="charlie-logos-obra-adulto-avatar.png"])::after,.profile-page figure:has(>img[src*="charlie-logos-obra-adulto-avatar.png"])::after{content:"";position:absolute;left:59%;top:65%;width:18%;aspect-ratio:1;transform:translate(-50%,-50%);background:url("../estrela-9-pontas-broche.svg") center/contain no-repeat;filter:drop-shadow(0 2px 3px rgba(0,0,0,.45));pointer-events:none;}
-.star-specimen{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px;}
-.star-specimen figure{margin:0;text-align:center;padding:12px;border:1px solid rgba(17,41,68,.12);border-radius:14px;background:#fffdf8;}
-.star-specimen img{width:100%;height:auto;max-height:132px;object-fit:contain;}
-.star-specimen figcaption{font-size:.78rem;color:#52677d;margin-top:6px;}
-@media(max-width:620px){.star-specimen{grid-template-columns:1fr;}}
 :root{
   --navy:#061426;--navy2:#0b2038;--ink:#0e1d31;--gold:#d8ae55;--gold2:#f1d48b;
   --ivory:#f6f2e8;--paper:#fffdf8;--muted:#b9c8d8;--line:rgba(216,174,85,.28);
