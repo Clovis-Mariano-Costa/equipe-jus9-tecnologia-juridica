@@ -142,3 +142,29 @@ a{color:inherit}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}
   object-fit:contain;
   object-position:center;
 }
+
+
+/* Logos Mobile First 2026-10-04 — retrato integral sem criar largura horizontal. */
+#charlie-logos-palavra .visual-pair,
+#charlie-logos-obra .visual-pair,
+.profile-page .visual-pair,
+.logos-twins-composition .visual-pair{min-width:0}
+#charlie-logos-palavra .visual-pair figure,
+#charlie-logos-obra .visual-pair figure,
+.profile-page .visual-pair figure,
+.logos-twins-composition .visual-pair figure{min-width:0;max-width:100%;overflow:hidden}
+#charlie-logos-palavra .visual-pair img[src*="charlie-logos-palavra-adulto-avatar"],
+#charlie-logos-obra .visual-pair img[src*="charlie-logos-obra-adulto-avatar"],
+.profile-page img[src*="charlie-logos-palavra-adulto-avatar"],
+.profile-page img[src*="charlie-logos-obra-adulto-avatar"]{
+  width:100%;
+  max-width:100%;
+  height:auto;
+  aspect-ratio:auto;
+  object-fit:contain;
+  object-position:center top;
+}
+@media(max-width:700px){
+  .profile-page .visual-pair,
+  .logos-twins-composition .visual-pair{grid-template-columns:1fr}
+}
