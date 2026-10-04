@@ -1,9 +1,3 @@
-/* Correção de escopo: carregado somente nos dois perfis autorais Logos. */
-.profile-page figure:has(>img[src*="charlie-logos-palavra-adulto-avatar.png"]),
-.profile-page figure:has(>img[src*="charlie-logos-obra-adulto-avatar.png"]){position:relative;}
-.profile-page figure:has(>img[src*="charlie-logos-palavra-adulto-avatar.png"])>img{content:url("../img/equipe/avatars/logos/20261003/charlie-logos-palavra-adulta-avatar-base.png");}
-.profile-page figure:has(>img[src*="charlie-logos-obra-adulto-avatar.png"])>img{content:url("../img/equipe/avatars/logos/20261003/charlie-logos-obra-adulto-avatar-base.png");}
-.profile-page figure:has(>img[src*="charlie-logos-palavra-adulto-avatar.png"])::after,
-.profile-page figure:has(>img[src*="charlie-logos-obra-adulto-avatar.png"])::after{content:"";position:absolute;left:var(--logos-brooch-x,62%);top:var(--logos-brooch-y,65%);width:18%;aspect-ratio:1;transform:translate(-50%,-50%);background:url("../estrela-9-pontas-broche.svg") center/contain no-repeat;filter:drop-shadow(0 2px 3px rgba(0,0,0,.45));pointer-events:none;}
-.profile-page figure:has(>img[src*="charlie-logos-palavra-adulto-avatar.png"]){--logos-brooch-x:68%;--logos-brooch-y:67%;}
-.profile-page figure:has(>img[src*="charlie-logos-obra-adulto-avatar.png"]){--logos-brooch-x:59%;--logos-brooch-y:65%;}
+/* Logos: os perfis usam diretamente os PNGs oficiais.
+   Broche e enquadramento pertencem ao arquivo de imagem, sem substituicao ou sobreposicao por CSS.
+   Mantido como arquivo de escopo dos perfis para compatibilidade e futuras regras nao destrutivas. */
