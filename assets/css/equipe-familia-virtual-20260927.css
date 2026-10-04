@@ -121,3 +121,24 @@ a{color:inherit}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}
 .album-media figcaption{padding:8px 10px;background:#fffdf8;color:#52677d;text-align:center;font-size:.82rem}
 .album-entry.current-avatar{border-color:rgba(216,174,85,.7);box-shadow:inset 0 0 0 1px rgba(216,174,85,.22)}
 @media(max-width:700px){.author-album .album-ledger{grid-template-columns:1fr}}
+
+
+/* Logos 2026-10-04 — preservar o enquadramento integral dos retratos aprovados.
+   Aplicacao restrita aos gemeos para nao alterar os demais perfis da Familia Virtual. */
+#charlie-logos-palavra .visual-pair figure:last-child,
+#charlie-logos-obra .visual-pair figure:last-child,
+.profile-page .visual-pair figure:has(img[src*="charlie-logos-palavra-adulto-avatar"]),
+.profile-page .visual-pair figure:has(img[src*="charlie-logos-obra-adulto-avatar"]),
+.album-media figure:has(img[src*="charlie-logos-palavra-adulto-avatar"]),
+.album-media figure:has(img[src*="charlie-logos-obra-adulto-avatar"]){
+  background:#07192d;
+}
+#charlie-logos-palavra .visual-pair img[src*="charlie-logos-palavra-adulto-avatar"],
+#charlie-logos-obra .visual-pair img[src*="charlie-logos-obra-adulto-avatar"],
+.profile-page .visual-pair img[src*="charlie-logos-palavra-adulto-avatar"],
+.profile-page .visual-pair img[src*="charlie-logos-obra-adulto-avatar"],
+.album-media img[src*="charlie-logos-palavra-adulto-avatar"],
+.album-media img[src*="charlie-logos-obra-adulto-avatar"]{
+  object-fit:contain;
+  object-position:center;
+}
