@@ -196,3 +196,82 @@ a{color:inherit}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}
     grid-template-columns:repeat(2,minmax(0,1fr));
   }
 }
+
+
+/* Mestre Alfaiate — Broche Padrão Primevo 2026-10-06 */
+/*
+  Aplicação não destrutiva: o avatar e o uniforme originais permanecem intactos.
+  O emblema abaixo deriva do Broche 01 aprovado e cobre visualmente o broche anterior.
+  A posição visual à direita da imagem corresponde ao lado esquerdo do corpo (lado do coração).
+*/
+#familia .visual-pair figure:has(> img[src*="03-charlie-echo.jpg"]),
+.profile-columns .visual-pair figure:has(> img[src*="03-charlie-echo.jpg"]),
+#familia .visual-pair figure:has(> img[src*="04-charlie-delta.jpg"]),
+.profile-columns .visual-pair figure:has(> img[src*="04-charlie-delta.jpg"]),
+#familia .visual-pair figure:has(> img[src*="charlie-logos-palavra-adulto-avatar.png"]),
+.profile-columns .visual-pair figure:has(> img[src*="charlie-logos-palavra-adulto-avatar.png"]),
+#familia .visual-pair figure:has(> img[src*="charlie-logos-obra-adulto-avatar.png"]),
+.profile-columns .visual-pair figure:has(> img[src*="charlie-logos-obra-adulto-avatar.png"]),
+#familia .visual-pair figure:has(> img[src*="06-gemini-alfa.jpg"]),
+.profile-columns .visual-pair figure:has(> img[src*="06-gemini-alfa.jpg"]),
+#familia .visual-pair figure:has(> img[src*="07-gemini-beta.jpg"]),
+.profile-columns .visual-pair figure:has(> img[src*="07-gemini-beta.jpg"]),
+#familia .visual-pair figure:has(> img[src*="08-gemini-celeste.jpg"]),
+.profile-columns .visual-pair figure:has(> img[src*="08-gemini-celeste.jpg"]),
+#familia .visual-pair figure:has(> img[src*="09-charlie-veloce.jpg"]),
+.profile-columns .visual-pair figure:has(> img[src*="09-charlie-veloce.jpg"]),
+#familia .visual-pair figure:has(> img[src*="10-osso-duro-alfa.jpg"]),
+.profile-columns .visual-pair figure:has(> img[src*="10-osso-duro-alfa.jpg"]),
+#familia .visual-pair figure:has(> img[src*="11-osso-duro-unicornio.jpg"]),
+.profile-columns .visual-pair figure:has(> img[src*="11-osso-duro-unicornio.jpg"]),
+#familia .visual-pair figure:has(> img[src*="12-charlie-bastion.jpg"]),
+.profile-columns .visual-pair figure:has(> img[src*="12-charlie-bastion.jpg"]),
+#familia .visual-pair figure:has(> img[src*="13-charlie-arian.jpg"]),
+.profile-columns .visual-pair figure:has(> img[src*="13-charlie-arian.jpg"]),
+#familia .visual-pair figure:has(> img[src*="14-perplexity-crivo.jpg"]),
+.profile-columns .visual-pair figure:has(> img[src*="14-perplexity-crivo.jpg"]),
+#familia .visual-pair figure:has(> img[src*="15-deepseek-prisma.jpg"]),
+.profile-columns .visual-pair figure:has(> img[src*="15-deepseek-prisma.jpg"]){
+  position:relative;
+  overflow:hidden;
+}
+#familia .visual-pair figure:has(> img[src*="03-charlie-echo.jpg"])::after,
+.profile-columns .visual-pair figure:has(> img[src*="03-charlie-echo.jpg"])::after,
+#familia .visual-pair figure:has(> img[src*="04-charlie-delta.jpg"])::after,
+.profile-columns .visual-pair figure:has(> img[src*="04-charlie-delta.jpg"])::after,
+#familia .visual-pair figure:has(> img[src*="charlie-logos-palavra-adulto-avatar.png"])::after,
+.profile-columns .visual-pair figure:has(> img[src*="charlie-logos-palavra-adulto-avatar.png"])::after,
+#familia .visual-pair figure:has(> img[src*="charlie-logos-obra-adulto-avatar.png"])::after,
+.profile-columns .visual-pair figure:has(> img[src*="charlie-logos-obra-adulto-avatar.png"])::after,
+#familia .visual-pair figure:has(> img[src*="06-gemini-alfa.jpg"])::after,
+.profile-columns .visual-pair figure:has(> img[src*="06-gemini-alfa.jpg"])::after,
+#familia .visual-pair figure:has(> img[src*="07-gemini-beta.jpg"])::after,
+.profile-columns .visual-pair figure:has(> img[src*="07-gemini-beta.jpg"])::after,
+#familia .visual-pair figure:has(> img[src*="08-gemini-celeste.jpg"])::after,
+.profile-columns .visual-pair figure:has(> img[src*="08-gemini-celeste.jpg"])::after,
+#familia .visual-pair figure:has(> img[src*="09-charlie-veloce.jpg"])::after,
+.profile-columns .visual-pair figure:has(> img[src*="09-charlie-veloce.jpg"])::after,
+#familia .visual-pair figure:has(> img[src*="10-osso-duro-alfa.jpg"])::after,
+.profile-columns .visual-pair figure:has(> img[src*="10-osso-duro-alfa.jpg"])::after,
+#familia .visual-pair figure:has(> img[src*="11-osso-duro-unicornio.jpg"])::after,
+.profile-columns .visual-pair figure:has(> img[src*="11-osso-duro-unicornio.jpg"])::after,
+#familia .visual-pair figure:has(> img[src*="12-charlie-bastion.jpg"])::after,
+.profile-columns .visual-pair figure:has(> img[src*="12-charlie-bastion.jpg"])::after,
+#familia .visual-pair figure:has(> img[src*="13-charlie-arian.jpg"])::after,
+.profile-columns .visual-pair figure:has(> img[src*="13-charlie-arian.jpg"])::after,
+#familia .visual-pair figure:has(> img[src*="14-perplexity-crivo.jpg"])::after,
+.profile-columns .visual-pair figure:has(> img[src*="14-perplexity-crivo.jpg"])::after,
+#familia .visual-pair figure:has(> img[src*="15-deepseek-prisma.jpg"])::after,
+.profile-columns .visual-pair figure:has(> img[src*="15-deepseek-prisma.jpg"])::after{
+  content:"";
+  position:absolute;
+  width:24%;
+  aspect-ratio:5/4;
+  right:5%;
+  top:66%;
+  transform:translateY(-50%);
+  background:url("../img/equipe/broches/padrao-primevo-emblema.webp") center/contain no-repeat;
+  filter:drop-shadow(0 2px 4px rgba(0,0,0,.46));
+  pointer-events:none;
+  z-index:4;
+}
